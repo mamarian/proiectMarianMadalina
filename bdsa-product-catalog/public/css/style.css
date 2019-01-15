@@ -1,0 +1,144 @@
+*:not(input):not(textarea) {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+  background: #fafafa;
+	color: #9d2ea5;
+		font-family:"Comic Sans MS";
+}
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #9694BB;
+  line-height: 55px;
+}
+
+h1 span {
+  color: #9694BB;
+}
+
+h2 {
+  font-weight: 400;
+  color:#8785A8;
+  margin-top: -15px;
+  font-size: 18px;
+}
+
+
+#container {
+  width: 800px;
+  height: 600px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: -2px 7px 44px -1px rgba(94, 78, 128, 0.66);
+}
+
+div.sidebar {
+  width: 20%;
+  height: 10%;
+  border-radius: 15px 0 0 25px;
+  padding: 5px;
+}
+
+nav {
+  float: right;
+  padding: 20px;
+}
+
+nav li{
+  color: #89D0CE;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+
+
+header {
+    background: #ECEBE3;
+}
+
+header h3 {
+    background: #ECEBE3;
+    color:#ECEBE3;
+}
+header h1 {
+    margin: 0;
+}
+
+#navigation {
+    float: left;
+    width: 100%;
+    background: #7651b6;
+}
+
+#navigation ul li {
+    list-style-type: circle;
+    display: inline;
+}
+#navigation li a {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+#navigation li a:hover {
+    background: #89D0CE;
+}
+main {
+    float: left;
+    width: 100%;
+}
+main > section {
+    float: left;
+    width: 100%;
+    background: #ECEBE3
+}
+main > section > .sidebar {
+    display: inline;
+    width: 20%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+}
+main > section > .sidebar.left {
+    float: left;
+}
+main > section > .sidebar.left ul {
+    margin: 0;
+    padding: 0;
+}
+main > section > .sidebar.left ul li {
+    margin: 0 0 1em;
+    padding: 0;
+    list-style-type: none;
+}
+#content {
+    float: left;
+    width: 60%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background-image: url("https://i.pinimg.com/564x/4f/e9/9c/4fe99cddd03e2b2769febc5954277438.jpg");
+    border-width: 0 1px 0 1px;
+    border-color: #ccc;
+    border-style: solid;
+}
+#content h2 {
+    margin: 0;
+}
+main > section > .sidebar.right {
+    float: right;
+}
+main > section > .sidebar.right h3 {
+    margin: 0;
+}
+
+
+
+

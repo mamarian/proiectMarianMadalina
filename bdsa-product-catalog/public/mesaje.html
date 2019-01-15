@@ -1,0 +1,116 @@
+<html>
+  
+<head>
+  
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     <script type="text/javascript" src="js/mesaje.js"></script>
+    
+    <header>
+  <div class="jumbotron text-center">
+    <h1>Feedback Clienti</h1>
+  </div>
+
+    
+   
+</header>
+</head>
+
+<style>
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+	font-family:"Comic Sans MS";
+color:#999999;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  background-image: url("https://scontent.fotp3-3.fna.fbcdn.net/v/t1.15752-9/48415806_2222554144651972_3687263465526788096_n.jpg?_nc_cat=104&_nc_ht=scontent.fotp3-3.fna&oh=446593764ae1dcce7238d7728a81de68&oe=5CCD75EB");
+}
+
+h1 {
+  margin-top: 10vh;
+  font-size: 2.5rem;
+  max-width: 500px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Open Sans';
+  text-transform: capitalize;
+  font-weight: 800;
+  color :#999999;
+  
+}
+
+
+
+#wrapper {
+  width: 98%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.post-text {
+
+  font-size: 12px;
+  	font-family:"Comic Sans MS";
+  border-radius: 5px;
+  background-color: #858e76;
+  padding: 10px 20px;
+  border: 1px solid;
+  box-shadow: 0 0 2px rgba(0,0,0,0.14); 
+  color:black;
+  
+}
+
+.post-created-by {
+  color:black;
+  font-size: 14px;
+  vertical-align: bottom; 
+  
+}
+.text-right
+{
+    text-align:right;
+}
+</style>
+<div id="wrapper" ng-app="bdsachatapp" class="row">  
+  <div id="main" ng-controller="mainCtrl" class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+
+    <div class="well">    
+     
+     
+     <ol id="messages" class="custom-bullet custom-bullet--b">
+    <!--<li>Lorem ipsum dolor sit amet</li>-->
+    <!--<li>Consectetur adipiscing elit</li>-->
+    <!--<li>Integer molestie lorem at massa</li>-->
+    <!--<li>Facilisis in pretium nisl aliquet</li>-->
+    <!--<li>Nulla volutpat aliquam velit</li>-->
+  </ol>
+  
+    </div> <!--end form well-->
+
+    <div id="post-stream" class="row">
+      <div class="col-md-12">
+
+        
+
+        <div class="post" ng-repeat="post in posts | orderBy:'createdAt':true">
+          <div class="post-title row">
+            
+            
+          </div>
+          
+        </div>
+
+      </div> 
+    </div>  <!--end post stream--> 
+    
+  </div><!-- end main/col-marker -->
+</div><!-- end wrapper/row-->
+
+</html>

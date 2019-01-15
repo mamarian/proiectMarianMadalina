@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Catalog Admin</title>
+    <!-- Jquery JS file -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap CSS File  -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+    <!-- Bootstrap JS file -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    <!-- Custom JS file -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="js/serialize.js"></script>
+    <script type="text/javascript" src="js/cadouri.js"></script>
+    <body background="#fafafa">
+   <!-- Content Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+              <h1 class="ribbon">
+     <strong class="ribbon-content">Gift Codes</strong>
+</h1>
+
+        </div>
+    </div>
+    
+    <style>
+        h1 {
+  position: relative;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  font-size:16px;
+}
+
+button{
+  position: relative;
+  cursor: pointer;
+  
+}
+
+body{ 
+background-color: #F1F8E9;
+background-image: url("https://scontent.fotp3-3.fna.fbcdn.net/v/t1.15752-9/49085642_1957511181036837_1044581448486486016_n.jpg?_nc_cat=103&_nc_ht=scontent.fotp3-3.fna&oh=95e1029468d74999f2919411314c049f&oe=5CD24B57");
+}
+.ribbon {
+ font-size: 25px !important;
+ width: 45%;
+ top: 50px;
+ position: relative;
+ background: #EF9A9A;
+ color: #fff;
+ text-align: center;
+ padding: .5em 2em; 
+ margin: .5em auto 3em; 
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #E57373;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #D32F2F transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+    </style>
+    <ul class="nav nav-tabs">
+      <li role="presentation" ><a href="/admin/">Home</a></li>
+       <li role="presentation"><a href="categories.html">Categorii</a></li>
+        <li role="presentation"><a href="products.html">Produse</a></li>
+      <li role="presentation" class="active"><a href="cadouri.html">Cadouri</a></li>
+       <li role="presentation"><a href="contact.html">Contact</a></li>
+    </ul>
+    
+     <h1> <div id="giftDisplay"></div></h1>
+  
+  <h1><button onclick="newGift()">Gift Generator</button>
+  </h1>
+  <script src="javascript.js"></script>
+    <br/>
+    
+
+</div>
+
+  
+  
+</div>
+
+</head>
+
+
+<!-- /Content Section -->
+</body>
+</html>
+
